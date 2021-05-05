@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="component_13_1" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-Fk-Vfj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_10356" translatesAutoresizingMaskIntoConstraints="NO" id="bOP-Fa-QMt">
+                                <rect key="frame" x="56" y="294.5" width="302" height="308"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="component_12_1" translatesAutoresizingMaskIntoConstraints="NO" id="8Kh-ET-KJ6">
+                                <rect key="frame" x="131" y="759" width="152" height="73"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MMo-Fk-Vfj" secondAttribute="bottom" id="9kE-f3-Nu3"/>
+                            <constraint firstItem="8Kh-ET-KJ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="ArD-Pq-kvI"/>
+                            <constraint firstAttribute="trailing" secondItem="MMo-Fk-Vfj" secondAttribute="trailing" id="GSR-Jx-Gwh"/>
+                            <constraint firstItem="8Kh-ET-KJ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="715" id="JHj-Xz-RHj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bOP-Fa-QMt" secondAttribute="trailing" constant="36" id="KFR-Pj-1HM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Kh-ET-KJ6" secondAttribute="bottom" constant="30" id="KK3-2s-mrX"/>
+                            <constraint firstItem="MMo-Fk-Vfj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="NIS-q6-ETm"/>
+                            <constraint firstItem="bOP-Fa-QMt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250.59107806691441" id="cd5-dd-eLn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Kh-ET-KJ6" secondAttribute="trailing" constant="131" id="gVD-4h-oOH"/>
+                            <constraint firstItem="MMo-Fk-Vfj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="kZo-09-p89"/>
+                            <constraint firstItem="bOP-Fa-QMt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="36" id="rSu-aA-auO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="component_12_1" width="608" height="264"/>
+        <image name="component_13_1" width="1500" height="3248"/>
+        <image name="group_10356" width="1212" height="308"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
