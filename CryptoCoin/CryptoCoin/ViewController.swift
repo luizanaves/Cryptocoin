@@ -6,30 +6,19 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
 
-class CoinViewController: UIViewController, UITableViewDataSource{
-    
-    @IBOutlet weak var tableOfCoins: UITableView!
-    
-    
-    var listOfCoins: [DataCoin] = []
+class ViewController: UIViewController{
+
+    @IBOutlet weak var signInButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listOfCoins.count
+
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let data = listOfCoins[indexPath.row]
-        
-        cell.textLabel?.text = "\(data.name) - \(data.symbol)"
-        cell.detailTextLabel?.text = "\(data.quote.USD.price)"
-        
-    return cell
-    }
-}
+
 

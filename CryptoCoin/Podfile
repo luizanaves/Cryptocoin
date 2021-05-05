@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.5'
+
+target 'CryptoCoin' do
+  use_frameworks!
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+
+  target 'CryptoCoinTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CryptoCoinUITests' do
+    # Pods for testing
+  end
+
+end
