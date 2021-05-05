@@ -10,58 +10,23 @@ import Firebase
 import GoogleSignIn
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-      // ...
-      if let error = error {
-        if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-            print("The user has not signed in before or they have since signed out.")
-        } else {
-        print("error signing into Google \(error.localizedDescription)")
-        return
-      }
-    }
-        
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
 
-        guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                          accessToken: authentication.accessToken)
-        Auth.auth().signIn(with: credential) { (authResult, error) in
-            if let error = error {
-                print("authentication error \(error.localizedDescription)")
-            }
-        }
-        let firebaseAuth = Auth.auth()
-        do {
-        try firebaseAuth.signOut()
-    }   catch let signOutError as NSError {
-        print ("Error signing out: %@", signOutError)
-    }
-    }
-    
-
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        // Perform any operations when the user disconnects from app here.
-        // ...
-        
-    }
-
-    
-
-    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
+        
+        GIDSignIn.sharedInstance()?.clientID = "411726864520-tqcjno95pi46h0nn3dbvpijrbpll330a.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance()?.delegate = self
         return true
     }
-    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
-      -> Bool {
-      return GIDSignIn.sharedInstance().handle(url)
+    
+    func sign(_ signIn: GIDSignIn, didSignInFor user: GIDGoogleUser, withError error: Error) {
+        print("User email: \(user.profile.email ?? "No Email")")
     }
-
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url)
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

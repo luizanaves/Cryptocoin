@@ -11,13 +11,20 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CryptoCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3S-KS-nXU">
-                                <rect key="frame" x="87" y="322" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="component_13_1" translatesAutoresizingMaskIntoConstraints="NO" id="HHG-xH-wcH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_10356" translatesAutoresizingMaskIntoConstraints="NO" id="NFA-TJ-syS">
+                                <rect key="frame" x="55" y="184" width="304" height="178"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMV-az-3fb" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="428" width="240" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -25,21 +32,31 @@
                                 </accessibility>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="If4-9R-c1M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NFA-TJ-syS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="140" id="03h-R3-IoH"/>
+                            <constraint firstItem="If4-9R-c1M" firstAttribute="trailing" secondItem="HHG-xH-wcH" secondAttribute="trailing" id="7N2-j7-uh3"/>
+                            <constraint firstItem="HHG-xH-wcH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CoX-B9-mPb"/>
+                            <constraint firstItem="HHG-xH-wcH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U5U-xn-T3M"/>
+                            <constraint firstItem="NFA-TJ-syS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="Zsv-Yk-3nP"/>
+                            <constraint firstItem="If4-9R-c1M" firstAttribute="bottom" secondItem="NFA-TJ-syS" secondAttribute="bottom" constant="500" id="daQ-0B-CQh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NFA-TJ-syS" secondAttribute="trailing" constant="35" id="oa9-zY-BVb"/>
+                            <constraint firstAttribute="bottom" secondItem="HHG-xH-wcH" secondAttribute="bottom" id="vKJ-ZO-WQa"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="signInButton" destination="l3S-KS-nXU" id="810-9Q-V49"/>
+                        <outlet property="signInButton" destination="tMV-az-3fb" id="mAf-cu-Ivb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="116"/>
+            <point key="canvasLocation" x="434.78260869565219" y="-32.142857142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="component_13_1" width="1500" height="3248"/>
+        <image name="group_10356" width="1212" height="308"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

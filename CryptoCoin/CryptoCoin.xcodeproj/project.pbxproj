@@ -19,8 +19,8 @@
 		85EE26442642E0D900464770 /* CryptoCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE26432642E0D900464770 /* CryptoCoinUITests.swift */; };
 		85EE26532642E50900464770 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE26522642E50900464770 /* Coin.swift */; };
 		85EE26562642E55B00464770 /* CoinRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE26552642E55B00464770 /* CoinRequest.swift */; };
-		85EE265B2642E8C300464770 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85EE265A2642E8C300464770 /* GoogleService-Info.plist */; };
 		85EE265D2642F7A900464770 /* CryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE265C2642F7A900464770 /* CryptoController.swift */; };
+		85EE265F2643188A00464770 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85EE265E2643188A00464770 /* GoogleService-Info.plist */; };
 		90D6D88D9A77105E81E12BFA /* Pods_CryptoCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3313C0D52EA80215EAA21A /* Pods_CryptoCoinTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +63,8 @@
 		85EE26452642E0D900464770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85EE26522642E50900464770 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		85EE26552642E55B00464770 /* CoinRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRequest.swift; sourceTree = "<group>"; };
-		85EE265A2642E8C300464770 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		85EE265C2642F7A900464770 /* CryptoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoController.swift; sourceTree = "<group>"; };
+		85EE265E2643188A00464770 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92FCC5C0EDE0F8CAF34AFAD3 /* Pods-CryptoCoin-CryptoCoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCoin-CryptoCoinUITests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoCoin-CryptoCoinUITests/Pods-CryptoCoin-CryptoCoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB06C8215585A155F438D41 /* Pods-CryptoCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCoin.debug.xcconfig"; path = "Target Support Files/Pods-CryptoCoin/Pods-CryptoCoin.debug.xcconfig"; sourceTree = "<group>"; };
 		CAD429772EB65C5426ACA3B9 /* Pods-CryptoCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCoin.release.xcconfig"; path = "Target Support Files/Pods-CryptoCoin/Pods-CryptoCoin.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 				85EE262A2642E0D900464770 /* Assets.xcassets */,
 				85EE262C2642E0D900464770 /* LaunchScreen.storyboard */,
 				85EE262F2642E0D900464770 /* Info.plist */,
-				85EE265A2642E8C300464770 /* GoogleService-Info.plist */,
+				85EE265E2643188A00464770 /* GoogleService-Info.plist */,
 				85EE26542642E52C00464770 /* data */,
 			);
 			path = CryptoCoin;
@@ -315,7 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85EE262E2642E0D900464770 /* LaunchScreen.storyboard in Resources */,
-				85EE265B2642E8C300464770 /* GoogleService-Info.plist in Resources */,
+				85EE265F2643188A00464770 /* GoogleService-Info.plist in Resources */,
 				85EE262B2642E0D900464770 /* Assets.xcassets in Resources */,
 				85EE26292642E0D800464770 /* Main.storyboard in Resources */,
 			);

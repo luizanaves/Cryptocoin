@@ -4,6 +4,7 @@ platform :ios, '14.5'
 target 'CryptoCoin' do
   use_frameworks!
   pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
 
